@@ -1,6 +1,6 @@
 #!/bin/bash
 
-check_comment() {
+check() {
 	local file=$1
 	local ext=${file##*.}
 
@@ -41,7 +41,7 @@ if [[ $# -ne 1 ]]; then
 fi
 
 if [[ -f $1 ]]; then
-	check_comment "$1"
+	check "$1"
 else
 	echo "Файл $file не найден."
 	exit 1
