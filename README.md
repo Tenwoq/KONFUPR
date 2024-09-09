@@ -10,3 +10,9 @@ cat /etc/protocols|sort -k 2,2nr|head -n 5|awk '{print $2, $1}'
 
 # Задание 3
 
+x = input()
+print('+' + '-' * (len(x)+2) + '+')
+print(f'| {x} |')
+print('+' + '-' * (len(x)+2) + '+')
+
+- ![image](https://github.com/user-attachments/assets/ba1ecbbe-8625-4b99-b2ac-c11c67132b95)
