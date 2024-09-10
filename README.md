@@ -53,3 +53,5 @@ fi
 
 echo "Команда '$command_name' успешно зарегестрирована."
 ```
+- ![image](https://github.com/user-attachments/assets/1280117c-398d-4a77-bd6e-0926e1da88b5)
+
