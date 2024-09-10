@@ -24,6 +24,22 @@ print('+' + '-' * (len(x)+2) + '+')
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
+	echo "Используйте: $0 имя_файла"
+	exit 1
+fi
+
+file="$1"
+
+grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' "$file" | sort -u
+```
+- ![image](https://github.com/user-attachments/assets/2af0d9ab-dd03-4ad4-b293-db44ab954226)
+
+
+# Задание 5
+```
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
 	echo "Используйте: $0 имя команды."
 	exit 1
 fi
@@ -53,6 +69,9 @@ fi
 
 echo "Команда '$command_name' успешно зарегестрирована."
 ```
-- ![image](https://github.com/user-attachments/assets/1280117c-398d-4a77-bd6e-0926e1da88b5)
+- ![image](https://github.com/user-attachments/assets/01adf7ca-63be-4d55-b741-fca7a61491c1)
 
+#Задание 6
+```
 
+```
