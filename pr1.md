@@ -73,5 +73,53 @@ echo "Команда '$command_name' успешно зарегестрирова
 
 # Задание 6
 ```
+#!/bin/bash
 
+check() {
+	local file=$1
+	local ext=${file##*.}
+
+	echo "Проверка: $file с расширением: .$ext"
+	
+	case $ext in
+		c)
+			if head -n 1 "$file" | grep -q '^\s*//' || head -n 1 "$file" | grep -q '^\s*/\*'; then
+				echo "$file: Есть комментарий."
+			else
+				echo "$file: Нет комментария."
+			fi
+			;;
+		js)
+			if head -n 1 "$file" | grep -q '^\s*//'; then
+				echo "$file: Есть комментарий."
+			else
+				echo "$file: Нет комментария."
+			fi
+			;;
+		py)
+			if head -n 1 "$file" | grep -q '^\s*#'; then
+				echo "$file: Есть комментарий."
+			else
+				echo "$file: Нет комментария."
+			fi
+			;;
+		*)
+			echo "$file: Неподдерживаемый формат."
+			;;
+	esac
+}
+
+
+if [[ $# -ne 1 ]]; then
+	echo "Использование: $0 <имя_файла>."
+	exit 1
+fi
+
+if [[ -f $1 ]]; then
+	check "$1"
+else
+	echo "Файл $file не найден."
+	exit 1
+fi
 ```
+- ![image](https://github.com/user-attachments/assets/7b04661f-04d9-4781-848c-a3fb6d6bd2d1)
