@@ -71,7 +71,7 @@ echo "Команда '$command_name' успешно зарегестрирова
 ```
 - ![image](https://github.com/user-attachments/assets/01adf7ca-63be-4d55-b741-fca7a61491c1)
 
-#Задание 6
+# Задание 6
 ```
 
 ```
