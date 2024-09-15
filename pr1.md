@@ -168,3 +168,78 @@ fi
 ```
 - ![image](https://github.com/user-attachments/assets/bdb659b5-68fa-4536-aa6b-74e38d295bd7)
 
+# Задание 8
+```
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+	echo "Использование: $0 /путь/к/каталогу <расширение>."
+	exit 1
+fi
+
+directory="$1"
+extension="$2"
+
+if [ ! -d "$directory" ]; then
+	echo "Ошибка: указанный каталог '$directory' не существует."
+	exit 1
+fi
+
+shopt -s nullglob
+files=("$directory"/*."$extension")
+
+if [ ${#files[@]} -eq 0 ]; then
+	echo "Ошибка: в указанном каталоге '$directory' нет файлов с расширением .'$extension'."
+	exit 1
+fi
+
+archive_name="${directory%/}.tar"
+
+tar -cvf "$archive_name" -C "$directory" ./*."$extension"
+
+echo "Архив '$archive_name' успешно создан."
+```
+- ![image](https://github.com/user-attachments/assets/61b13c58-2601-4844-a376-4c2f49c0985a)
+
+# Задание 9
+```
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+	echo "Использование: $0 <входной_файл> <выходной_файл>"
+	exit 1
+fi
+
+input_file="$1"
+output_file="$2"
+
+if [ ! -f "$input_file" ]; then
+	echo "Ошибка: '$input_file' не найден."
+	exit 1
+fi
+
+sed 's/    /\t/g' "$input_file" > "$output_file"
+
+echo "Заменено в файле: '$output_file'"
+```
+- ![image](https://github.com/user-attachments/assets/86eb1de7-b829-48eb-8c42-39325b83f712)
+
+#Задание 10
+```
+#!/bin/bash
+
+if [ "$#" -ne 1 ]; then
+	echo "Использование: $0 /путь/к/каталогу."
+	exit 1
+fi
+
+directory="$1"
+
+if [ ! -d "$directory" ]; then
+	echo: "Ошибка: указанный каталог '$directory' не существует."
+	exit 1
+fi
+
+find "$directory" -type f -name "*.txt" -empty -exec basename {} \;
+```
+- ![image](https://github.com/user-attachments/assets/4823ea05-d7c7-48d2-9044-99de685a2903)
