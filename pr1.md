@@ -224,7 +224,7 @@ echo "Заменено в файле: '$output_file'"
 ```
 - ![image](https://github.com/user-attachments/assets/86eb1de7-b829-48eb-8c42-39325b83f712)
 
-#Задание 10
+# Задание 10
 ```
 #!/bin/bash
 
