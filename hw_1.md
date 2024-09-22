@@ -1,6 +1,3 @@
-# Let's create the Readme.md file with the given content
-
-readme_content = """
 # Эмулятор командной оболочки Unix-подобной ОС
 
 ## 1. Общее описание
