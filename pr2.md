@@ -1,6 +1,4 @@
-# Практическое занятие №2.
-
-## Задание 1
+# Задание 1
 
 ```
 import matplotlib
@@ -16,7 +14,7 @@ print(f"Matplotlib description: {matplotlib.__doc__}")
 git clone https://github.com/matplotlib/matplotlib.git
 ```
 
-## Задание 2
+# Задание 2
 
 ```
 const express = require('express');
@@ -41,7 +39,7 @@ npm info express
 git clone https://github.com/expressjs/express.git
 ```
 
-## Задание 3
+# Задание 3
 ```
 digraph G {
     node [shape=box];
@@ -133,7 +131,7 @@ dot -Tpng task3.dot -o task3.png
 ![image](https://github.com/user-attachments/assets/83953d44-16c0-4f93-a989-cae60603c0cd)
 
 
-## Задание 4
+# Задание 4
 
 ```
 include "globals.mzn";
@@ -149,7 +147,7 @@ solve minimize sum(digits[1..6]);
 
 ![image](https://github.com/user-attachments/assets/8eb9c79f-3039-4e3d-b98c-4846c9d018cd)
 
-## Задание 5
+# Задание 5
 
 ```
 enum MenuVer = {M1_0_0, M1_1_0, M1_2_0, M1_3_0, M1_4_0, M1_5_0};
@@ -174,10 +172,10 @@ solve satisfy;
 ![image](https://github.com/user-attachments/assets/8e409510-1656-4665-ba04-eda574d3fef6)
 
 
-## Задание 6
+# Задание 6
 
 ```
 ```
 
-## Задание 7
+# Задание 7
 
