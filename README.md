@@ -1,8 +1,8 @@
 # Конфигурационное Управление
 
-- [1-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw1.md)
-- 
 ## Домашние работы
+
+- [1-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw1.md)
 
 ## Практические работы
 
