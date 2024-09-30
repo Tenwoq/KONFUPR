@@ -33,15 +33,9 @@ npm info express
 ```
 -![image](https://github.com/user-attachments/assets/70b9d370-2cac-4c3b-81ca-a43e9dc83431)
 
-> Для получения пакета без менеджеров пакетов, прямиком из репозитория:
-
-```
-git clone https://github.com/expressjs/express.git
-```
-
 # Задание 3
 ```
-digraph G {
+digraph Exp {
     node [shape=box];
 
     subgraph cluster_matplotlib {
@@ -123,9 +117,8 @@ digraph G {
     }
 }
 ```
-
 ```
-dot -Tpng task3.dot -o task3.png
+dot -Tpng t3.dot -o t3.png
 ```
 
 ![image](https://github.com/user-attachments/assets/83953d44-16c0-4f93-a989-cae60603c0cd)
@@ -136,41 +129,48 @@ dot -Tpng task3.dot -o task3.png
 ```
 include "globals.mzn";
 
-array[1..6] of var 0..9: digits;  
+var 0..9: n1;
+var 0..9: n2;
+var 0..9: n3;
+var 0..9: n4;
+var 0..9: n5;
+var 0..9: n6;
 
-constraint all_different(digits);
-
-constraint sum(digits[1..3]) = sum(digits[4..6]);
-
-solve minimize sum(digits[1..6]);
+constraint n1 + n2 + n3 == n4 + n5 + n6;
+constraint all_different([n1, n2, n3, n4, n5, n6]);
+solve minimize n1 + n2 + n3;
 ```
+- ![image](https://github.com/user-attachments/assets/05abc4dc-41c8-43f1-9ec8-e24e3de6c380)
 
-![image](https://github.com/user-attachments/assets/8eb9c79f-3039-4e3d-b98c-4846c9d018cd)
 
 # Задание 5
 
 ```
-enum MenuVer = {M1_0_0, M1_1_0, M1_2_0, M1_3_0, M1_4_0, M1_5_0};
-enum DropdownVer = {D1_8_0, D2_0_0, D2_1_0, D2_2_0, D2_3_0};
-enum IconsVer = {I1_0_0, I2_0_0};
+int: mCount = 6;
+int: dCount = 5;
+int: iCount = 2;
+var 1..mCount: m;
+var 1..dCount: d;
+var 1..iCount: i;
 
-var MenuVer: menu;
-var DropdownVer: dropdown;
-var IconsVer: icons;
+array[1..mCount] of tuple(int, int, int): mVersions = [(1,0,0), (1,1,0), (1,2,0), (1,3,0), (1,4,0), (1,5,0)];
+array[1..dCount] of tuple(int, int, int): dVersions = [(1,8,0), (2,0,0), (2,1,0), (2,2,0), (2,3,0)];
+array[1..iCount] of tuple(int, int, int): iVersions = [(1,0,0), (2,0,0)];
 
-constraint
-  (menu == M1_5_0 -> dropdown in {D2_3_0} /\ icons in {I2_0_0}) /\
-  (menu == M1_4_0 -> dropdown in {D2_2_0, D2_3_0} /\ icons in {I2_0_0}) /\
-  (menu == M1_3_0 -> dropdown in {D2_1_0, D2_2_0, D2_3_0} /\ icons in {I2_0_0}) /\
-  (menu == M1_2_0 -> dropdown in {D2_0_0, D2_1_0, D2_2_0, D2_3_0} /\ icons in {I2_0_0}) /\
-  (menu == M1_1_0 -> dropdown in {D1_8_0, D2_0_0, D2_1_0, D2_2_0, D2_3_0} /\ icons in {I1_0_0, I2_0_0}) /\
-  (menu == M1_0_0 -> dropdown in {D1_8_0, D2_0_0, D2_1_0, D2_2_0, D2_3_0} /\ icons in {I1_0_0, I2_0_0});
+constraint (mVersions[m] == (1,0,0) \/ mVersions[m] == (1, 5, 0) /\ iVersions[i] == (1, 0, 0));
+constraint (mVersions[m].2 >= 1 /\ mVersions[m].2 <= 5) -> (dVersions[d] == (2, 3, 0) \/ dVersions[d] == (2, 0, 0));
+constraint mVersions[m] == (1, 0, 0) -> dVersions[d] == (1, 8, 0);
+constraint (dVersions[d].2 >= 0 /\ dVersions[d].2 <= 3) -> iVersions[i] == (2, 0, 0);
 
 solve satisfy;
+
+output [
+  "Menu version: ", show(mVersions[m]), "\n",
+  "Dropdown version: ", show(dVersions[d]), "\n",
+  "Icon version: ", show(iVersions[i]), "\n"
+];
 ```
-
-![image](https://github.com/user-attachments/assets/8e409510-1656-4665-ba04-eda574d3fef6)
-
+- ![image](https://github.com/user-attachments/assets/57c1d7ea-5654-4bf0-bbbc-ffcea06a7485)
 
 # Задание 6
 
