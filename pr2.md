@@ -6,15 +6,10 @@ print(f"Matplotlib version: {matplotlib.__version__}")
 print(f"Matplotlib location: {matplotlib.__file__}")
 print(f"Matplotlib description: {matplotlib.__doc__}")
 ```
-- ![image](https://github.com/user-attachments/assets/7b451023-5092-4c53-95d6-68c2db48d624)
-- ![image](https://github.com/user-attachments/assets/33e088f3-39c7-4b4f-a18e-216707e8f83e)
-- ![image](https://github.com/user-attachments/assets/3d0ca72c-996e-44d8-ba86-17aa2f522a01)
-- ![image](https://github.com/user-attachments/assets/8bdea4fc-60d2-4961-b379-99a7dee410b0)
-
-> Чтобы получить пакет без менеджеров пакетов прямо из репозитория:
-```
-git clone https://github.com/matplotlib/matplotlib.git
-```
+![image](https://github.com/user-attachments/assets/7b451023-5092-4c53-95d6-68c2db48d624)
+![image](https://github.com/user-attachments/assets/33e088f3-39c7-4b4f-a18e-216707e8f83e)
+![image](https://github.com/user-attachments/assets/3d0ca72c-996e-44d8-ba86-17aa2f522a01)
+![image](https://github.com/user-attachments/assets/8bdea4fc-60d2-4961-b379-99a7dee410b0)
 
 # Задание 2
 
@@ -24,14 +19,14 @@ console.log(`Express version: ${require('express/package.json').version}`);
 console.log(`Express path: ${require.resolve('express')}`);
 console.log(`Express description: ${require('express/package.json').description}`);
 ```
--![image](https://github.com/user-attachments/assets/74a18c8f-e3e8-4b11-94b1-1eb2d5ff3c3f)
+![image](https://github.com/user-attachments/assets/74a18c8f-e3e8-4b11-94b1-1eb2d5ff3c3f)
 
 > Также можно использовать:
 
 ```
 npm info express
 ```
--![image](https://github.com/user-attachments/assets/70b9d370-2cac-4c3b-81ca-a43e9dc83431)
+![image](https://github.com/user-attachments/assets/70b9d370-2cac-4c3b-81ca-a43e9dc83431)
 
 # Задание 3
 ```
@@ -120,9 +115,7 @@ digraph Exp {
 ```
 dot -Tpng t3.dot -o t3.png
 ```
-
 ![image](https://github.com/user-attachments/assets/83953d44-16c0-4f93-a989-cae60603c0cd)
-
 
 # Задание 4
 
@@ -140,8 +133,7 @@ constraint n1 + n2 + n3 == n4 + n5 + n6;
 constraint all_different([n1, n2, n3, n4, n5, n6]);
 solve minimize n1 + n2 + n3;
 ```
-- ![image](https://github.com/user-attachments/assets/05abc4dc-41c8-43f1-9ec8-e24e3de6c380)
-
+![image](https://github.com/user-attachments/assets/05abc4dc-41c8-43f1-9ec8-e24e3de6c380)
 
 # Задание 5
 
@@ -170,7 +162,7 @@ output [
   "Icon version: ", show(iVersions[i]), "\n"
 ];
 ```
-- ![image](https://github.com/user-attachments/assets/57c1d7ea-5654-4bf0-bbbc-ffcea06a7485)
+![image](https://github.com/user-attachments/assets/57c1d7ea-5654-4bf0-bbbc-ffcea06a7485)
 
 # Задание 6
 
