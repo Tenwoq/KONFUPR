@@ -2,13 +2,13 @@
 ```
 cut -d: -f1 /etc/passwd|sort
 ```
-- ![#1](https://github.com/user-attachments/assets/6d4ef45a-e63c-4cf2-ac3a-5ff4c253add4)
+![#1](https://github.com/user-attachments/assets/6d4ef45a-e63c-4cf2-ac3a-5ff4c253add4)
 
 # Задание 2
 ```
 cat /etc/protocols|sort -k 2,2nr|head -n 5|awk '{print $2, $1}'
 ```
-- ![#2](https://github.com/user-attachments/assets/864a17f7-fffc-4134-8fcb-a640c742b487)
+![#2](https://github.com/user-attachments/assets/864a17f7-fffc-4134-8fcb-a640c742b487)
 
 # Задание 3
 ```
@@ -17,7 +17,7 @@ print('+' + '-' * (len(x)+2) + '+')
 print(f'| {x} |')
 print('+' + '-' * (len(x)+2) + '+')
 ```
-- ![image](https://github.com/user-attachments/assets/ba1ecbbe-8625-4b99-b2ac-c11c67132b95)
+![image](https://github.com/user-attachments/assets/ba1ecbbe-8625-4b99-b2ac-c11c67132b95)
 
 # Задание 4
 ```
@@ -32,7 +32,7 @@ file="$1"
 
 grep -oE '\b[a-zA-Z_][a-zA-Z0-9_]*\b' "$file" | sort -u
 ```
-- ![image](https://github.com/user-attachments/assets/2af0d9ab-dd03-4ad4-b293-db44ab954226)
+![image](https://github.com/user-attachments/assets/2af0d9ab-dd03-4ad4-b293-db44ab954226)
 
 
 # Задание 5
@@ -69,7 +69,7 @@ fi
 
 echo "Команда '$command_name' успешно зарегестрирована."
 ```
-- ![image](https://github.com/user-attachments/assets/01adf7ca-63be-4d55-b741-fca7a61491c1)
+![image](https://github.com/user-attachments/assets/01adf7ca-63be-4d55-b741-fca7a61491c1)
 
 # Задание 6
 ```
@@ -122,7 +122,7 @@ else
 	exit 1
 fi
 ```
-- ![image](https://github.com/user-attachments/assets/7b04661f-04d9-4781-848c-a3fb6d6bd2d1)
+![image](https://github.com/user-attachments/assets/7b04661f-04d9-4781-848c-a3fb6d6bd2d1)
 
 # Задание 7
 ```
@@ -166,7 +166,7 @@ if ! $found_duplicates; then
 	exit 1
 fi
 ```
-- ![image](https://github.com/user-attachments/assets/bdb659b5-68fa-4536-aa6b-74e38d295bd7)
+![image](https://github.com/user-attachments/assets/bdb659b5-68fa-4536-aa6b-74e38d295bd7)
 
 # Задание 8
 ```
@@ -199,7 +199,7 @@ tar -cvf "$archive_name" -C "$directory" ./*."$extension"
 
 echo "Архив '$archive_name' успешно создан."
 ```
-- ![image](https://github.com/user-attachments/assets/61b13c58-2601-4844-a376-4c2f49c0985a)
+![image](https://github.com/user-attachments/assets/61b13c58-2601-4844-a376-4c2f49c0985a)
 
 # Задание 9
 ```
@@ -222,7 +222,7 @@ sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Заменено в файле: '$output_file'"
 ```
-- ![image](https://github.com/user-attachments/assets/86eb1de7-b829-48eb-8c42-39325b83f712)
+![image](https://github.com/user-attachments/assets/86eb1de7-b829-48eb-8c42-39325b83f712)
 
 # Задание 10
 ```
@@ -242,4 +242,4 @@ fi
 
 find "$directory" -type f -name "*.txt" -empty -exec basename {} \;
 ```
-- ![image](https://github.com/user-attachments/assets/4823ea05-d7c7-48d2-9044-99de685a2903)
+![image](https://github.com/user-attachments/assets/4823ea05-d7c7-48d2-9044-99de685a2903)
