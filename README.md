@@ -9,3 +9,4 @@
 
 - [1-я Практическая](https://github.com/Tenwoq/KONFUPR/blob/Pract1/pr1.md)
 - [2-я Практическая](https://github.com/Tenwoq/KONFUPR/blob/Pract1/pr2.md)
+- [3-я Практическая](https://github.com/Tenwoq/KONFUPR/blob/Pract1/pr3.md)
