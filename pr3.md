@@ -212,7 +212,7 @@ E = a
 for i in range(10):
     print(generate_phrase(parse_bnf(BNF), 'E'))
 ```
-## Звдвние №3
+## Задание №3
 Код
 ```
 BNF = '''
@@ -223,7 +223,7 @@ A = 0 | 1
 Вывод
 ![image](https://github.com/user-attachments/assets/e8bfb3f0-af9b-4a77-8e5c-2ef1ef98cd89)
 
-## Звдвние №4
+## Задание №4
 Код
 ```
 import random
@@ -266,7 +266,7 @@ for _ in range(10):
 Вывод
 ![image](https://github.com/user-attachments/assets/36f386ee-5465-4995-b240-120807ec7f3c)
 
-## Звдвние №5
+## Задание №5
 Код
 ```
 BNF = '''
