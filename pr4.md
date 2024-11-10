@@ -4,27 +4,26 @@
 ## Задание №1
 Код
 ```bash
-$ git commit -am "commit on master 1"
-$ git commit -am "commit on master 2"
-$ git checkout -b first HEAD~1
-$ git commit -am "commit on first 1"
-$ git commit -am "commit on first 2"
-$ git checkout master
-$ git commit -am "commit on master 3"
-$ git commit -am "commit on master 4"
-$ git checkout -b second HEAD~3
-$ git commit -am "commit on second 1"
-$ git commit -am "commit on second 2"
-$ git checkout master
-$ git merge first
-$ git checkout second
-$ git rebase master
-$ git checkout master
-$ git merge second
-$ git checkout HEAD~6
-```
+git commit -am "Initial commit on master"
+git commit -am "Second commit on master"
+git checkout -b first HEAD~1
+git commit -am "First commit on first branch"
+git commit -am "Second commit on first branch"
+git checkout master
+git commit -am "Third commit on master"
+git commit -am "Fourth commit on master"
+git checkout -b second HEAD~3
+git commit -am "First commit on second branch"
+git commit -am "Second commit on second branch"
+git merge first
+git rebase master
+git checkout master
+git merge second
+git checkout HEAD~6
 
-![alt text](pract4/image2.png)
+```
+![image](https://github.com/user-attachments/assets/f7dd2e88-af77-4449-9106-885cf158f215)
+
 
 ## Задание №2
 Код
