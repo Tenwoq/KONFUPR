@@ -28,24 +28,79 @@ git checkout HEAD~6
 ## Задание №2
 Код
 ```bash
-$ git init
-Initialized empty Git repository in C:/sample/pract4/.git/
+C:\Users\Tenwo>git init
+Initialized empty Git repository in C:/Users/Tenwo/.git/
 
-$ git config user.name "coder1"
-$ git config user.email "coder1@example.com@"
+C:\Users\Tenwo>git config user.name "coder1"
 
-$ echo "print('Hello World!')" > prog.py
-$ git status
+C:\Users\Tenwo>git config user.email "coder1@example.com@"
+
+C:\Users\Tenwo>echo "print("Hello World")">prog.py
+
+C:\Users\Tenwo>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'главное меню/': Permission denied
+warning: could not open directory 'Мои документы/': Permission denied
+warning: could not open directory 'Шаблоны/': Permission denied
 On branch master
 
 No commits yet
 
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
+        -1.14-windows.xml
+        .VirtualBox/
+        .ipython/
+        .jdks/
+        .matplotlib/
+        .node_repl_history
+        .tmazing/
+        .vscode/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        VirtualBox VMs/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
         prog.py
 
-$ git add prog.py
-$ git status
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\Tenwo>git add prog.py
+
+C:\Users\Tenwo>git status
+warning: could not open directory 'Application Data/': Permission denied
+warning: could not open directory 'Cookies/': Permission denied
+warning: could not open directory 'Local Settings/': Permission denied
+warning: could not open directory 'NetHood/': Permission denied
+warning: could not open directory 'PrintHood/': Permission denied
+warning: could not open directory 'Recent/': Permission denied
+warning: could not open directory 'SendTo/': Permission denied
+warning: could not open directory 'главное меню/': Permission denied
+warning: could not open directory 'Мои документы/': Permission denied
+warning: could not open directory 'Шаблоны/': Permission denied
 On branch master
 
 No commits yet
@@ -54,15 +109,49 @@ Changes to be committed:
   (use "git rm --cached <file>..." to unstage)
         new file:   prog.py
 
-$ git commit -m "Add prog.py with some data"
-[master (root-commit) f32eac5] Add prog.py with some data
- 1 file changed, 0 insertions(+), 0 deletions(-)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        -1.14-windows.xml
+        .VirtualBox/
+        .ipython/
+        .jdks/
+        .matplotlib/
+        .node_repl_history
+        .tmazing/
+        .vscode/
+        3D Objects/
+        AppData/
+        Contacts/
+        Desktop/
+        Documents/
+        Downloads/
+        Favorites/
+        Links/
+        Music/
+        NTUSER.DAT
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+        NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+        OneDrive/
+        Pictures/
+        Saved Games/
+        Searches/
+        Videos/
+        VirtualBox VMs/
+        ntuser.dat.LOG1
+        ntuser.dat.LOG2
+        ntuser.ini
+
+
+C:\Users\Tenwo>git commit -m "Add prog.py with some data"
+[master (root-commit) 8c9f213] Add prog.py with some data
+ 1 file changed, 1 insertion(+)
  create mode 100644 prog.py
 
-$ git log
-commit f32eac568ea11bcd907dd56448913821d10297d9 (HEAD -> master)
-Author: coder1 <coder1@example.com>
-Date:   Tue Nov 5 22:41:26 2024 +0300
+C:\Users\Tenwo>git log
+commit 8c9f213b38587d413efeaf0b3c7ada962081363f (HEAD -> master)
+Author: coder1 <coder1@example.com@>
+Date:   Mon Nov 11 13:59:05 2024 +0300
 
     Add prog.py with some data
 ```
