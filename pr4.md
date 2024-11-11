@@ -368,5 +368,5 @@ def listAllGitObjects():
 
 listAllGitObjects()
 ```
+![image](https://github.com/user-attachments/assets/b25e8353-313a-4dd3-a45c-2383850fb98e)
 
-![img](pract4/image.png)
