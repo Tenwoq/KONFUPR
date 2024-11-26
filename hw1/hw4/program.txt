@@ -1,0 +1,5 @@
+# Тестовые данные из задания
+LOAD_CONST 41 15 41
+READ_MEM 40 34 452
+WRITE_MEM 22 95 44 61
+BINARY_OP 7 56 1 444

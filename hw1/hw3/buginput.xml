@@ -1,0 +1,16 @@
+<config>
+    <comment>
+        (* Это многострочный комментарий
+        который не закрыт
+    </comment>
+    <def>
+        <name>MAX_CONNECTIONS</name>
+        <value>100</value>
+    </def>
+    <array>
+        <value>server1</value>
+        <value>server2</value>
+    </array>
+    <eval>|MAX_CONNECTIONS|</eval>
+    <unknown>InvalidTag</unknown> <!-- Это неверный тег -->
+</config>

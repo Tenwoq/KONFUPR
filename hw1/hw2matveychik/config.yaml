@@ -1,0 +1,3 @@
+package_name: "requests"
+max_depth: 3
+visualization_tool_path: "mermaid"

@@ -1,0 +1,35 @@
+<config>
+    <comment>
+        (* comment
+        HELL YEAAAH
+        EAGLE CRY *)
+    </comment>
+
+    <def name="MAX_CONNECTIONS">
+        <number>100</number>
+    </def>
+
+    <entry name="servers">
+        <array>
+            <string>server1</string>
+            <string>server2</string>
+        </array>
+    </entry>
+
+    <entry name="database">
+        <dict>
+            <entry name="host">
+                <string>localhost</string>
+            </entry>
+            <entry name="port">
+                <number>5432</number>
+            </entry>
+        </dict>
+    </entry>
+
+    <eval>MAX_CONNECTIONS</eval>
+
+    <entry name="app_name">
+        <string>MyApp</string>
+    </entry>
+</config>

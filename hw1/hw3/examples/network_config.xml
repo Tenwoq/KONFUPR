@@ -1,0 +1,17 @@
+
+<dict>
+    <entry name="network">
+        <dict>
+            <entry name="name">
+                <string>q(MyNetwork)</string>
+            </entry>
+            <entry name="devices">
+                <array>
+                    <string>q(Router)</string>
+                    <string>q(Switch)</string>
+                    <string>q(Firewall)</string>
+                </array>
+            </entry>
+        </dict>
+    </entry>
+</dict>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<Log>
+  <Instruction Command="LOAD_CONST">
+    <a>42</a>
+    <b>25</b>
+    <c>41</c>
+  </Instruction>
+  <Instruction Command="READ_MEM">
+    <a>40</a>
+    <b>34</b>
+    <c>452</c>
+  </Instruction>
+  <Instruction Command="WRITE_MEM">
+    <a>22</a>
+    <b>95</b>
+    <c>44</c>
+    <d>61</d>
+  </Instruction>
+  <Instruction Command="BINARY_OP">
+    <a>7</a>
+    <b>56</b>
+    <c>1</c>
+    <d>444</d>
+  </Instruction>
+</Log>

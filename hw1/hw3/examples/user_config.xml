@@ -1,0 +1,20 @@
+
+<dict>
+    <entry name="user">
+        <dict>
+            <entry name="username">
+                <string>q(admin)</string>
+            </entry>
+            <entry name="permissions">
+                <array>
+                    <string>q(read)</string>
+                    <string>q(write)</string>
+                    <string>q(execute)</string>
+                </array>
+            </entry>
+            <entry name="id">
+                <number>101</number>
+            </entry>
+        </dict>
+    </entry>
+</dict>
