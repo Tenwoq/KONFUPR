@@ -4,6 +4,9 @@
 ## Домашние работы
 
 - [1-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw1.md)
+- [2-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw2.md)
+- [3-я Домашняя]()
+- [4-я Домашняя]()
 
 ## Практические работы
 
