@@ -26,8 +26,14 @@
 git clone https://github.com/Tenwoq/KONFUPR.git
 cd KONFUPR/hw1/hw2
 ```
+В файле этой папки configg.toml измение путь к репозиторию на личный, либо на мой. Для этого
+1. Перейдите к скопированному гиту, перейдите к этой папке и скопируйте ее путь: ```KONFUPR\hw1\hw2gitt```
+2. В папке KONFUPR\hw1\hw2 откройте ```configg.xml``` и измените путь к репозиторию на тот, который вы исправили
+```
+repository_path = "...KONFUPR/hw2gitt"
+```
 ## Запуск
 
 ```
-python launcher.py
+python graph_visualizer.py
 ```
