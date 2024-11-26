@@ -6,7 +6,7 @@
 - [1-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw1.md)
 - [2-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw2.md)
 - [3-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw3.md)
-- [4-я Домашняя]()
+- [4-я Домашняя](https://github.com/Tenwoq/KONFUPR/blob/Pract1/hw4.md)
 
 ## Практические работы
 
